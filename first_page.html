@@ -1,0 +1,131 @@
+<html>
+<head>
+	<title>feed</title>
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="first_page.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<script type="text/javascript" src="first_page.js"></script>
+</head>
+<body onload="newpost();">
+	<!-- <h1>Welcome! Happy Networking!</h1>
+	<form>
+	<a href="connections.html" class="btn btn-info btn-sm">Connections</a>
+	</form>
+	<form>
+	<a href="chatbox.html" class="btn btn-info btn-sm">Chatbox</a>
+	</form>
+	<form>
+	<a href="createpost.html" class="btn btn-info btn-sm">Create post</a>
+	</form>
+	<form>
+	<a href="search.html" class="btn btn-info btn-sm">Search</a>
+	</form> -->
+	<!--header section-->
+	<div class="headerfixed">
+	<!-- header start -->
+		<div class="header">
+		<!-- wrapper start of heading -->
+			<div class="wrapper">
+			  <!-- logo  -->
+				<a href="first_page.html">
+					 <img src="logo.png" width="120" height="45" class="logoletter">
+				</a>
+				<!-- search bar -->
+				<form id="searching">
+					<input type="text" name="search" placeholder="Search" id="search">
+				</form>
+				<!-- icon bar too navigate of the pages -->
+				<div class="icon-bar">
+					<ul>
+						<li style="border-bottom: 6px solid white;"><a href="first_page.html" onmouseover="headerchange(1);" onmouseout="headerorigin(1);"><img src="home.jpg" id="homaj-home"><p id="p1">Home</p></a></li>
+			 	<!-- profile -->
+			 			<li> <a href="profile.html" onmouseover="headerchange(2);" onmouseout="headerorigin(2);"><img src="download.jpg" id="homaj-profile"><p id="p2">Profile</p></a> </li>
+			 	<!-- society -->
+			 			<li><a href="connections.html" onmouseover="headerchange(3);" onmouseout="headerorigin(3);"><img src="connections.jpg" id="homaj-society"><p id="p3">Connections</p></a></li>
+			 	<!-- message -->
+			 			<li> <a href="chatbox.html" onmouseover="headerchange(4);" onmouseout="headerorigin(4);"><img src="chat.jpg" id="homaj-message"><p id="p4">ChatBox</p></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end of wrapper -->
+		</div>   <!-- end of header -->
+	</div>      <!-- end of headerfixed -->
+
+	<!-- content section -->
+	<div class="content">
+		<!-- start wrapper -->
+		<div class="wrapper">
+			<!-- start left section -->
+			<div class="leftfixed">
+				<div class="sidebarleft">
+					<img src="download.jpg"> 
+						<p id="sidename">Name</p>
+						<p id="college">Punjab Engineering College</p>
+						<a href="profile.html" id="viewall">View All</a>
+						<hr>
+						<p id="logout">
+						<a href="login.html">Log Out</a>
+					</p>
+				</div>   <!-- ebd of sidebar left -->
+			</div>      <!-- end of leftfixed -->
+			<!-- start of main content section -->
+			<div class="mainnotfixed" id="mainnotfixed">
+				<!-- start of post content -->
+				<div class="main mainpost" style="margin-botton:20px; padding-bottom:10px;">
+					<div class="userimg">
+					 	<img src="download.jpg"> 
+					</div>
+					<div class="username">
+						<p class="name" style="top:15px;">Name</p>
+					</div>
+					<p class="quotes">
+						<textarea id="mypara" placeholder="share an article, photo,video or idea"></textarea>
+					</p>
+					<!-- file to load to post -->
+					<div class="post">
+						<input name="file" type="file">
+					</div>
+					<div class="postbar">
+						<button type="button" id="postmypost" class="postmypost" onclick="mypost();">Post</button>
+					</div>
+				</div>
+				<!-- end of post a content -->	
+				<hr>
+				<!-- posted content view -->
+				<div class="allpost"></div>   <!-- all the posted content to be viewed here -->
+			</div>
+			<!-- start of right section -->
+			<div class="rightfixed">
+					<p id="suggestion">Suggestions</p>
+					<!-- <div class="suggesfixed">
+						
+					</div> -->
+				<!-- start of right fixed -->
+					<div class="sidebarright">
+					<!-- suggested user -->
+						<div class="rigthcontent">
+							<img src="download.jpg" height="45" width="50">
+							<p class="name">User Name</p>
+							<a href="#" id="connect" onclick="changelogo('connect1');">+connect</a>
+						</div>
+						<div class="rigthcontent">
+							<img src="download.jpg" height="45" width="50">
+							<p class="name">User Name</p>
+							<a href="#" id="connect" onclick="changelogo('connect2');">+connect</a>
+						</div>
+						<div class="rigthcontent">
+							<img src="download.jpg" height="45" width="50">
+							<p class="name">User Name</p>
+							<a href="#" id="connect" onclick="changelogo('connect3');">+connect</a>
+						</div>
+					</div>   <!-- end of suggested user -->
+				</div>      <!-- end of right fixed -->
+			</div>      <!-- end of right fixed -->
+		</div>       <!-- end of wrapper  -->
+	</div>         <!-- end of content section -->
+
+
+
+
+</body>
+</html>

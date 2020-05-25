@@ -1,0 +1,27 @@
+.rightfixed #suggestion{
+	font-size: 20px;
+	/*margin-bottom: 20px;*/
+}
+/*.sidebarright{
+	position: static;
+	/*padding-left:0px;*/
+}*/
+.mainfixed .followers #follow1{
+	padding-left:30px;
+}
+.mainfixed{
+	padding-left:350px;
+}
+.followers{
+	display:inline-block;
+	position: static;
+	border: 1px solid #B7B7B7;
+	border-radius: 0 4px 4px 0;
+	box-shadow: 4px 1.5px 5px #999999;
+	width:60%;
+	box-sizing: border-box;
+  	height: 150px;
+}
+/*.rightcontent{
+	padding-left:0px;
+}*/

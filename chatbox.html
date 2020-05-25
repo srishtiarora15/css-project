@@ -1,0 +1,227 @@
+<html>
+<head>
+	<title>ChatBox</title>
+	<link rel="stylesheet" type="text/css" href="chatbox.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<script src="chatbox.js"></script>
+</head>
+<body>
+	<!-- <div class="headerfixed">
+		<div class="header">
+			<div class="wrapper">
+				<a href="first_page.html">
+					 <img scr="icon.jpg" width="120" height="45" class="logoletter">
+				</a>
+				<form id="searching">
+					<input type="text" name="search" placeholder="Search" id="search">
+				</form>
+				<div class"icon-bar">
+					<ul>
+						<li>
+							<a href="first_page.html">Home</a>
+						</li>
+						<li>
+							<a href="profile.html">profile</a>
+						</li>
+						<li>
+							<a href="connections.html">Connections</a>
+						</li>
+						<li>
+							<a href="chatbox.html">Chatbox</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div> -->
+		<div class="headerfixed">
+	<!-- header start -->
+		<div class="header">
+		<!-- wrapper start of heading -->
+			<div class="wrapper">
+			  <!-- logo  -->
+				<a href="first_page.html">
+					 <img src="logo.png" width="120" height="45" class="logoletter">
+				</a>
+				<!-- search bar -->
+				<form id="searching">
+					<input type="text" name="search" placeholder="Search" id="search">
+				</form>
+				<!-- icon bar too navigate of the pages -->
+				<div class="icon-bar">
+					<ul>
+						<li style="border-bottom: 6px solid white;"><a href="first_page.html" onmouseover="headerchange(1);" onmouseout="headerorigin(1);"><img src="home.jpg" id="homaj-home"><p id="p1">Home</p></a></li>
+			 	<!-- profile -->
+			 			<li> <a href="profile.html" onmouseover="headerchange(2);" onmouseout="headerorigin(2);"><img src="download.jpg" id="homaj-profile"><p id="p2">Profile</p></a> </li>
+			 	<!-- society -->
+			 		<li><a href="connections.html" onmouseover="headerchange(3);" onmouseout="headerorigin(3);"><img src="connections.jpg" id="homaj-society"><p id="p3">Connections</p></a></li>
+			 	<!-- message -->
+			 		<li> <a href="chatbox.html" onmouseover="headerchange(4);" onmouseout="headerorigin(4);"><img src="chat.jpg" id="homaj-message"><p id="p4">ChatBox</p></a></li>
+						<!-- <l1 style="border-bottom:6px solid white;">
+							<a href="first_page.html" onmouseover="headerchange(1);" onmouseout="headerorigin(1);">
+								<img src="home.jpg" height="40" width="40">
+								<p id="p1">Home</p>
+							</a>
+						</li>
+						<l1>
+							<a href="profile.html" onmouseover="headerchange(2);" onmouseout="headerorigin(2);">
+								<img src="download.jpg" height="40" width="40">
+								<p id="p2">Profile</p>
+							</a>
+						</li>
+						<l1>
+							<a href="connections.html" onmouseover="headerchange(3);" onmouseout="headerorigin(3);">Connections
+								<img src="connections.jpg">
+								<p id="p3">Connections</p>
+							</a>
+						</li>
+						<l1>
+							<a href="chatbox.html" onmouseover="headerchange(4);" onmouseout="headerorigin(4);">Chatbox
+								<img src="chat.jpg">
+								<p id="p4">ChatBox</p>
+							</a>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+			<!-- end of wrapper -->
+		</div>   <!-- end of header -->
+	</div>      <!-- end of headerfixed -->
+
+		<div class="content">
+			<div class="wrapper">
+				<div class="leftfixed">
+					<div class="sidebarleft">
+						<img src="download.jpg"> 
+						<p id="sidename">Name</p>
+						<p id="college">Punjab Engineering College</p>
+						<a href="profile.html" id="viewall">View All</a>
+						<hr>
+						<p id="logout">
+							<a href="login.html">Log Out</a>
+						</p>
+					</div>   <!-- ebd of sidebar left -->
+				</div>
+						<!-- <img src="">
+						<p id="sidename">Name</p>
+						<p id="college">Punjab Engineering College</p>
+						<a href="profile.html" id="viewall">View All</a>
+						<hr>
+						<p id="logout">
+							<a href="login.html">Logout</a>
+						</p>
+					</div>
+				</div> -->
+
+				<div class="mainnotfixed">
+					<div class="contact">
+						<div class="headmsg">
+							<p>Messaging</p>
+						</div>
+						<div class="leftcontent">
+							  <form id="conatctsearch">
+							  	<input type"text" name="search" placeholder="search" id="searchcontact">
+							  </form>
+							  <div class="contacts">
+							  	<div class="contactuser" onclick="select(1)">
+							  		<!-- <img src=""> -->
+							  		<p class="name" height="50">Name 1</p>
+							  	</div>
+							  	<div class="contactuser" onclick="select(2)">
+							  		<!-- <img src=""> -->
+							  		<p class="name" height="50">Name 2</p>
+							  	</div>
+							  	<div class="contactuser" onclick="select(3)">
+							  		<!-- <img src=""> -->
+							  		<p class="name" height="50">Name 3</p>
+							  	</div>
+							  	<div class="contactuser" onclick="select(4)">
+							  		<!-- <img src=""> -->
+							  		<p class="name" height="50">Name 4</p>
+							  	</div>
+							  </div>
+						</div>
+					</div>
+					<div class="chat">
+						<div class="chatuser">
+							<!-- <img src=""> -->
+							<p class="viewname">Name</p>
+						</div>
+						<div class="chatmsg">
+							<div class="received" style="display:block;">
+								::before
+								<p>Hello</p>
+							</div>
+							<div class="send" style="display:block;">
+								::before
+								<p>Hi!</p>
+							</div>
+							<div class="received" style="display:block">
+								::before
+								<p>How are you?</p>
+							</div>
+						</div>
+						<div class="sendmessage">
+							<textarea id="textarea"></textarea>
+							<p id="sendsymbol" onclick="sendmsg();"> 
+								<img src="send.png" width="50" height="50">
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="rightfixed">
+					<p id="suggestion">Suggestions</p>
+					<!-- <div class="suggesfixed">
+						
+					</div> -->
+				<!-- start of right fixed -->
+					<div class="sidebarright">
+					<!-- suggested user -->
+						<div class="rigthcontent">
+							<img src="download.jpg" height="45" width="50">
+							<p class="name">User Name</p>
+							<a href="#" id="connect" onclick="changelogo('connect1');">+connect</a>
+						</div>
+						<div class="rigthcontent">
+							<img src="download.jpg" height="45" width="50">
+							<p class="name">User Name</p>
+							<a href="#" id="connect" onclick="changelogo('connect2');">+connect</a>
+						</div>
+						<div class="rigthcontent">
+							<img src="download.jpg" height="45" width="50">
+							<p class="name">User Name</p>
+							<a href="#" id="connect" onclick="changelogo('connect3');">+connect</a>
+						</div>
+					</div>   <!-- end of suggested user -->
+				</div>      <!-- end of right fixed -->
+				<!-- <div class="rightfixed">
+					<div class="suggesfixed">
+						<p id="suggestion">Suggestion</p>
+					</div>
+					<div class="sidebarleft">
+						<div class="rightcontent">
+							<img src="">
+							<p class="name">Username</p>
+							<a href="#" id="connect1" onclick="changelogo('connect1');">+Connect</a>
+						</div>
+						<div class="rightcontent">
+							<img src="">
+							<p class="name">Username</p>
+							<a href="#" id="connect2" onclick="changelogo('connect2');">+Connect</a>
+						</div>
+						<div class="rightcontent">
+							<img src="">
+							<p class="name">Username</p>
+							<a href="#" id="connect3" onclick="changelogo('connect3');">+Connect</a>
+						</div>
+						<div class="rightcontent">
+							<img src="">
+							<p class="name">Username</p>
+							<a href="#" id="connect4" onclick="changelogo('connect4');">+Connect</a>
+						</div>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+</body>
+</html>

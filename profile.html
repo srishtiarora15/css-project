@@ -1,0 +1,194 @@
+<!--include the header files first   -->
+<html>
+<head>
+	<title>My Profile</title>
+	<link rel="stylesheet" type="text/css" href="profile.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<script src="profile.js"></script>
+	
+</head>
+<body>
+	<div class="headerfixed">
+	<!-- header start -->
+		<div class="header">
+		<!-- wrapper start of heading -->
+			<div class="wrapper">
+			  <!-- logo  -->
+				<a href="first_page.html">
+					 <img src="logo.png" width="120" height="45" class="logoletter">
+				</a>
+				<!-- search bar -->
+				<form id="searching">
+					<input type="text" name="search" placeholder="Search" id="search">
+				</form>
+				<!-- icon bar too navigate of the pages -->
+				<div class="icon-bar">
+					<ul>
+						<li style="border-bottom: 6px solid white;"><a href="first_page.html" onmouseover="headerchange(1);" onmouseout="headerorigin(1);"><img src="home.jpg" id="homaj-home"><p id="p1">Home</p></a></li>
+			 	<!-- profile -->
+			 			<li> <a href="profile.html" onmouseover="headerchange(2);" onmouseout="headerorigin(2);"><img src="download.jpg" id="homaj-profile"><p id="p2">Profile</p></a> </li>
+			 	<!-- society -->
+			 		<li><a href="connections.html" onmouseover="headerchange(3);" onmouseout="headerorigin(3);"><img src="connections.jpg" id="homaj-society"><p id="p3">Connections</p></a></li>
+			 	<!-- message -->
+			 		<li> <a href="chatbox.html" onmouseover="headerchange(4);" onmouseout="headerorigin(4);"><img src="chat.jpg" id="homaj-message"><p id="p4">ChatBox</p></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="wrapper">
+			<div class="leftfixedprofle">
+				<!-- <div class="image">
+					<!-- put an image of the background -->
+					<!-- <img src="download.jpg">
+				</div> --> 
+				<div class="sidebarleftprofile">
+					<img src="download.jpg">
+					<input type="file" name="pic" class="chooseslide1" accept="image/*" onchange="loadfile(event)" title="change profile pic">
+					<!-- <p class="slideEdit">\</p> -->
+					<!-- <img src=""> profile image -->
+					<p id="sidename">Name</p>
+					<p id="logout">
+						<a href="login.html">Logut</a>
+					</p>
+				</div>
+				<div class="timeline">
+					<div class="container">
+						<p class="slideEdit2" title="Edit" onclick="enablemodal()">
+							<img src="edit.png" width="50" height="50">
+						</p>
+						<div class="tcontent">
+							<h2>Personal Detail</h2>
+							<h4>First Name:</h4>
+							<p>Name</p>
+							<h4>Last Name:</h4>
+							<p>Lname</p>
+							<h4>Email:</h4>
+							<p>mail@gmail.com</p>
+							<h4>Date of birth</h4>
+							<p>date</p>
+							<h4>Gender</h4>
+							<p>Male/Female</p>
+							<h4>Phone number</h4>
+							<p>7423746284</p>
+							<h4>Primary School</h4>
+							<p>school</p>
+							<h4>Degree</h4>
+							<p>B.tech</p>
+							<h4>Academic Year</h4>
+							<p>2018-2022</p>
+							<h4>College</h4>
+							<p>Punjab Engineering College</p>
+							<h4>Address</h4>
+							<p>postal address</p>
+							<h4>Interested In</h4>
+							<p>Machine learning</p>
+							<h4>Hobbies</h4>
+							<p>Playing</p>
+							<h4>Languages known</h4>
+							<p>Hindi, English, Punjabi</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal deanimate" style="display:none;">
+					<div class"edit">
+						<span class="close" title="Close Modal" onclick="disablemodal(0)">x</span>
+						<h2 align="center">Personal Detail Edit</h2>
+						<form action="#" onsubmit="return false">
+							<br>
+								<label for="fname">First Name</label>
+							</br>
+							<input type="text" id="fname" placeholder="Enter the first Name" required>
+							<br>
+								<label for="lname">Last Name</label>
+							</br>
+							<input type="text" id="lname" placeholder="Enter the Last Name" required>
+							<br>
+								<label for="email">Email</label>
+							</br>
+							<input type="email" id="email" placeholder="Enter the email" required>
+							<br>
+								<label for="date">Birthday</label>
+							</br>
+							<select></select>
+							<br>
+								<input type="radio" value="male" name="sex" id="male" required>
+								<label for="male">Male</label>
+								<input type="radio" value="female" name="sex" id="female" required>
+								<label for="female" id="female">Female</label>
+							</br>
+							
+							<br>
+								<label for="phoneno">Phone number</label>
+							</br>
+							<input type="number" id="phoneno" placeholder="Enter the phone number" required>
+							<br>
+								<label for="pschool">Primary School</label>
+							</br>
+							<input type="text" id="pschool" placeholder="Enter the primary school" required>
+							<br>
+								<label for="degree">Degree</label>
+							</br>
+							<input type="text" id="degree" placeholder="Enter the degree" required>
+							<br>
+								<label for="year">Academic year</label>
+							</br>
+							<input type="date" id="year" placeholder="Enter the academic year" required>
+							<br>
+								<label for="college">College</label>
+							</br>
+							<input type="text" id="college" placeholder="Enter your college" required>
+							<br>
+								<label for="address">Address</label>
+							</br>
+							<input type="text" id="address" placeholder="Enter your address" required>
+							<br>
+								<label for="interests">Inerested In</label>
+							</br>
+							<input type="text" id="interests" placeholder="Enter your interests" required>
+							<br>
+								<label for="hobby">Hobbies</label>
+							</br>
+							<input type="text" id="hobby" placeholder="Enter your hobbies" required>
+							<br>
+								<label for="language">Languages known</label>
+							</br>
+							<input type="text" id="language" placeholder="Enter the languages known" required>
+							<br>
+								<button type="submit" onclick="update1()">Update</button>
+							</br>
+							<br>
+								<button type="button" class="cancelbtn" onclick="disablemodal(0)">Cancel</button>
+							</br>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="rightfixed">
+				<div class="suggesfixed">
+					<p id="suggestion">Suggestion</p>
+				</div>
+				<div class="sidebarright">
+					<div class="rightcontent">
+						<p class="name">User Name</p>
+						<a href="#" id="connect1" onclick="changelogo('connect1');">+Connect</a>
+					</div>
+					<div class="rightcontent">
+						<p class="name">User Name</p>
+						<a href="#" id="connect2" onclick="changelogo('connect2');">+Connect</a>
+					</div>
+					<div class="rightcontent">
+						<p class="name">User Name</p>
+						<a href="#" id="connect3" onclick="changelogo('connect3');">+Connect</a>
+					</div>
+					<div class="rightcontent">
+						<p class="name">User Name</p>
+						<a href="#" id="connect4" onclick="changelogo('connect4');">+Connect</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
